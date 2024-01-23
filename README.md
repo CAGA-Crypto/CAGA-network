@@ -8,7 +8,7 @@ Official CAGA network based on Ethereum protocol and execution layer Geth.
 
 Testnet 
 ```
-Ankara
+Ankara - 7277
 ```
 
 Mainnet

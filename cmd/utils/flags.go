@@ -988,6 +988,7 @@ func setBootstrapNodes(ctx *cli.Context, cfg *p2p.Config) {
 			urls = params.AnkaraBootnodes
 		}
 	}
+	//todo: change enode
 	cfg.BootstrapNodes = mustParseBootnodes(urls)
 }
 
@@ -1713,7 +1714,7 @@ func SetEthConfig(ctx *cli.Context, stack *node.Node, cfg *ethconfig.Config) {
 		SetDNSDiscoveryDefaults(cfg, params.MainnetGenesisHash)
 	case ctx.Bool(AnkaraFlag.Name):
 		if !ctx.IsSet(NetworkIdFlag.Name) {
-			cfg.NetworkId = 5
+			cfg.NetworkId = 7277
 		}
 		cfg.Genesis = core.DefaultAnkaraGenesisBlock()
 		SetDNSDiscoveryDefaults(cfg, params.AnkaraGenesisHash)
